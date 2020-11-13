@@ -27,7 +27,7 @@ int main(){
 		printf("Q %d %d %d %d\n", p_0, p_50-1, p_25, p_75 - 1);
 		cout.flush();
 		
-		scanf("%d,%d",&w1,&w2);
+		scanf("%d,%d",&w_1,&w_2);
 		if(w_1 == 0 && w_2 == 0){
 			L = p_75;
 		}
@@ -45,7 +45,7 @@ int main(){
 
 		if(L == R){
 			printf("A %d\n", L);
-			cout.flash();
+			cout.flush();
 			break;
 		}
 
