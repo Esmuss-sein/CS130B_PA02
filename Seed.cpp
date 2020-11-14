@@ -25,7 +25,7 @@ int main(){
 		int span = R - L + 1;
 		if(span == 2){
 			printf("Q %d %d %d %d \n", L,L,R,R);
-			cout.flash();
+			cout.flush();
 			scanf("%d %d", &w_1,&w_2);
 
 			if(w_1 == 1){
@@ -48,7 +48,7 @@ int main(){
 				printf("A %d\n", L+1);
 			}
 			else{
-				printf("A %d\n", R)
+				printf("A %d\n", R);
 			}
 			cout.flush();
 			break;
