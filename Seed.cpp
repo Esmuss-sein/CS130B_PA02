@@ -54,12 +54,12 @@ int main(){
 			break;
 		}//Similar if span is 3. 
 		else{
-			int p_0 = L, p_25 = L+span/4, p_50 = L + span/2, p_75 = L + 3*span/4, p_1 = R;//Set the points on 1/4, 1/2, 3/4, which divide the span into four equal parts. 
+			int p_0 = L, p_25 = L+span/4, p_50 = L + span/2, p_75 = L + span/2+span/4, p_1 = R;//Set the points on 1/4, 1/2, 3/4, which divide the span into four equal parts. 
 
 			printf("Q %d %d %d %d\n", p_0, p_50-1, p_25, p_75 - 1);
 			cout.flush();
 
-			scanf("%d,%d",&w_1,&w_2);
+			scanf("%d %d",&w_1,&w_2);
 			if(w_1 == 0 && w_2 == 0){
 				L = p_75;
 			}
@@ -70,16 +70,16 @@ int main(){
 			else if(w_1 == 1 && w_2 == 0){
 				R = p_50;
 			}
-			else{
+			else if(w_1 == 1 && w_2 == 1){
 				L = p_25;
 				R = p_50;
 			}
+		}
 
-			if(L == R){
-				printf("A %d\n", L);
-				cout.flush();
-				break;
-			}
+		if(L == R){
+			printf("A %d\n", L);
+			cout.flush();
+			break;
 		}
 	}
 	return 0;
